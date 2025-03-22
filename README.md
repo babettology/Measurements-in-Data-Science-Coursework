@@ -68,6 +68,7 @@ However, the low R-squared value (5%) suggests that while socio-demographic fact
 
 1.6. 
 Table 4: Regression results for trust level for voting
+
 ![reg trsut 2](https://github.com/user-attachments/assets/1db0e549-fba1-418f-b548-40a22c17d707)
 
 Table 4 presents the model with voting as the dependent variable. The baseline value of 0.704 indicates that when the trust index is 0, the predicted probability of voting is 70.4%. The estimate of 0.024 shows that for each unit increase in the trust index, the probability of voting increases by 2.44%. 
