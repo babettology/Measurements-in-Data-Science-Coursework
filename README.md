@@ -14,6 +14,9 @@ Q1
   
 
 Table 1: Results of trust variables 
+
+![table ](https://github.com/user-attachments/assets/e7cca5c9-131f-47c4-a449-2bb82709e79f)
+
  
 
 Looking at Figure and Table 1, trust variables appear generally right skewed, indicating a neutral to lower trust in institutions is more common among respondents. 
@@ -23,13 +26,19 @@ Overall, this suggests that people trust the police most, view political entitie
 
 1.3. 
 Figure 2: Distribution of the trust index 
+![distrib trsut](https://github.com/user-attachments/assets/178bf14c-4d33-45f9-96bd-ad4754e2e460)
+
  
 The index represents the average trust level on a 0 to 10 scale, 0 being “no trust” and 10 as “complete trust”. Scores are the average of trust in all the institution for each respondent.  The distribution is nearly normal, with fewer scores in the 8 and above range, and a mean at 4.7 showing a slight skew to lower trust levels. 
 In our index we assume that all items are equally as important in the overall respondent trust. Additionally, complete case analysis assumes respondents to all questions to not differ from partial responders, which if not missing-at-random, increases the risk of selection bias. 
 1.4 
 Figure 3: Predicted trust index by country 
+![pred by country](https://github.com/user-attachments/assets/12908867-6e18-487d-9344-3b8339933ece)
+
  
 Table 2: Regression results for trust index by country
+
+![reg trsut](https://github.com/user-attachments/assets/796e5ef1-5732-4e04-9cda-8135d7869a71)
 
 
 As seen on Table 2, coefficients represent the average trust relative to the reference country, Austria, which has a baseline trust score of 4.61. 
@@ -42,6 +51,8 @@ However, the low R-squared value where only 13.6% of the variance in trust level
  
 1.5. 
 Table 3: Regression results for socio-demographic predictors of trust
+
+![ref socio](https://github.com/user-attachments/assets/05f0120c-c35e-48dc-a923-37f5f9c8e1a7)
 
 As shown in Table 3, all predictors for trust index are statistically significant, except where household income is missing.  
 
@@ -57,6 +68,7 @@ However, the low R-squared value (5%) suggests that while socio-demographic fact
 
 1.6. 
 Table 4: Regression results for trust level for voting
+![reg trsut 2](https://github.com/user-attachments/assets/1db0e549-fba1-418f-b548-40a22c17d707)
 
 Table 4 presents the model with voting as the dependent variable. The baseline value of 0.704 indicates that when the trust index is 0, the predicted probability of voting is 70.4%. The estimate of 0.024 shows that for each unit increase in the trust index, the probability of voting increases by 2.44%. 
 
@@ -66,7 +78,8 @@ Although the results are statistically significant, the effects are small. Highe
 
 1.8.  
 Figure 4: Comparing PC1 and equal weight trust index 
- 
+ ![pca](https://github.com/user-attachments/assets/2fd58c52-9b27-4ab0-a0e8-7a3d60ba1a7f)
+
 
 Figure 4 shows a strong positive relationship between PC1 and the trust index, with points clustering almost in a straight line. The correlation of 0.99 suggests that PC1 captures nearly all the variance in the trust index, making it a good summary of the data. 
 This makes PC1 a more efficient summary of the data, capturing the key patterns influencing trust. Still the equal weight index could be simpler to interpret and useful to communicate results. 
@@ -78,7 +91,8 @@ Q2
 2.1.
 Figure 5: Correlation matrix of democratic ideal
  
- 
+ ![correlation](https://github.com/user-attachments/assets/48a46fb0-93ef-4b8f-9c02-775aabce2c5a)
+
 
 In Figure 5, the strongest correlation is between "people's views prevail" and "the will of the people is unstoppable" (0.557), possibly reflecting direct democracy or populist ideals. Another strong correlation between "courts treat people fairly" and "fair elections" (0.535), seems to represent broader belief in democratic institutions integrity.
 Conversely, the weak correlation between "people's views prevail" and "fair elections" (0.174) suggests a disconnect between public empowerment and perceptions of procedural fairness in elections.
@@ -92,13 +106,16 @@ Both methods reduce the dimensionality of data by summarising variability into f
 
 2.3.
 Table 4.1: EFA loadings and uniqueness values. 
- 
+ ![efa loadings1](https://github.com/user-attachments/assets/11545d86-2b52-4d1d-944b-04cb22a27e15)
+
 
 Table 4.2:  EFA explained variance by factor. 
- 
+ ![loading 2](https://github.com/user-attachments/assets/e1895975-d4db-4620-8fad-9c8d2b7974cf)
+
 
 Table 4.3: EFA hypothesis testing results 
- 
+ ![loading 3](https://github.com/user-attachments/assets/d71c2566-0bab-4d02-873f-3a72538537a7)
+
 From Table 4.1, Factor 1 strongly loads on "courts treat people fairly" (0.68) and "fair elections" (0.75), explaining 56.25% and 46.24% of their variance respectively, highlighting the importance of fair judicial processes and electoral systems. 
 Factor 2, with loadings of 0.73 for both "people’s views prevail" and "the will of the people is unstoppable," highlights the role of public influence, implying that Factor 2 explains 53.29% of the variance in each of these variables. 
 Uniqueness values show "fair elections" is well-explained by the factors (0.42), while "final say by referendum" (0.64) suggests the need for additional latent factors.
@@ -111,6 +128,9 @@ Q3
 
 3.3. 
 Table 5: Regression results on relative perceived levels of democracy. 
+
+![reg p demo](https://github.com/user-attachments/assets/4ca43e35-bed7-4903-9bd1-a9dd6b0e4d00)
+
  
 The regression presents country differences in perceived democracy relative to Austria, with baseline scores of 7.51 for Factor 1 and 3.35 for Factor 2
 
@@ -120,6 +140,7 @@ Bulgaria, Croatia, and Poland have negative coefficients on both factors, especi
  
 Table 6: Ranking positions and differences
  
+![rank difference](https://github.com/user-attachments/assets/6219fc83-2b16-42d9-a8af-cd05d3953b1e)
 
 When looking at rankings, Table 6 highlights significant differences, especially for Hungary (11 ranks), Germany (9), and Slovakia (8), showing that how democratic features weights affects perceptions. 
 These findings highlight the challenges of measuring democracy, as countries may differ significantly depending on which features are prioritised, emphasising the multidimensional nature of the target concept. 
