@@ -94,12 +94,13 @@ for (var in names(t)) {
     ) +
     theme_minimal()
   
-  Trust index mean
+# Trust index mean
   # Finding the mean for the trust index 
   m <- mean(complete_t$trust_index, na.rm = TRUE)
   m
   ## [1] 4.729239
-  4. Run a linear regression model regressing the equal weight index on dummy variables for each country.
+  
+# 4. Run a linear regression model regressing the equal weight index on dummy variables for each country.
   country_trust_reg <- lm(trust_index ~ country, data = complete_ess, weights = wgt)
   
   # Table regression 
@@ -112,21 +113,21 @@ for (var in names(t)) {
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) + geom_hline(yintercept = 4, linetype = "dashed", color = "blue") + 
     geom_hline(yintercept = 6, linetype = "dashed", color = "blue")    
   
-  5. Run a linear regression model with the equal weight index as dependent variable and socio-demographic predictors
+  # 5. Run a linear regression model with the equal weight index as dependent variable and socio-demographic predictors
   # Run the regression with predictors
   predictors_reg <- lm(trust_index ~ female + age + degree + urban + household_income + activity, data = complete_ess, weights = wgt)
   
   # Display the results
   tab_model(predictors_reg, title = "Regression Results", 
             dv.labels = "Trust Index", show.ci = FALSE, show.p = TRUE, digits = 3)
-  6.Run a linear regression model regressing the voting as a dependent and trust index as independent.
+  # 6.Run a linear regression model regressing the voting as a dependent and trust index as independent.
   # Run the regression of voting patterns on trust index
   voting_regression <- lm(voted ~ trust_index, data = complete_ess, weights = wgt)
   
   # Table the regression
   tab_model(voting_regression, title = "Regression Results", 
             dv.labels = "Voting", show.ci = FALSE, show.p = TRUE, digits = 3)
-  8. Principal component analysis
+  # 8. Principal component analysis
   # PCA on the seven trust variables
   pcafit <- prcomp(complete_t[, 1:7], center = TRUE, scale. = FALSE)
   
@@ -148,8 +149,8 @@ for (var in names(t)) {
     theme_minimal()
   
   
-  Question 2
-  1. Calculate and plot the pairwise correlations.
+  # Question 2
+  # 1. Calculate and plot the pairwise correlations.
   ## Subset the variables
   v <- ess[, c("courts_treatsame_imp", "fair_elections_imp", "critical_media_imp", 
                "finalsay_referendum_imp", "peopleviews_prevail_imp", "willpeople_unstoppable_imp")]
@@ -169,7 +170,7 @@ for (var in names(t)) {
   corrplot(cor_matrix, add = TRUE, type = 'lower', method = 'number', order = 'AOE', 
            diag = FALSE, tl.pos = 'n', cl.pos = 'n', number.cex = 1.5)
   
-  Looking if the correlation are statistically significant.
+  # Looking if the correlation are statistically significant.
   # Showing statitical significance 
   sig <- all(cor.mtest(v)$p < 0.001)
   
@@ -223,8 +224,8 @@ for (var in names(t)) {
               ))
   
   
-  Question 3
-  3. Run two linear regressions for sq_factor1 and sq_factor2.
+  # Question 3
+  # 3. Run two linear regressions for sq_factor1 and sq_factor2.
   fa_weights <- solve(fafit$correlation) %*% fafit$loadings
   
   ess$sq_factor1 <- as.matrix(ess[,grepl("*sq$", names(ess))]) %*% fa_weights[,1] 
